@@ -5,7 +5,7 @@ Feature:  Search for property for sale
 
 Given I navigate to the Zoopla homepage
 When I search for <Property> in <Location>
-And I enter between <Minimum> and <Maximum> pounds
+And I enter between <Minimum> and <Maximum> price
 And select <amount> Bedrooms
 Then search result page displays <Property>
 
@@ -17,7 +17,7 @@ Examples:
 
 Given I navigate to the Zoopla homepage
 When I search for <Property> in <Location>
-And I enter between <Minimum> and <Maximum> pounds
+And I enter between <Minimum> and <Maximum> price
 And select <Amount> Bedrooms
 And I select <Items> from the search result page
 Then <Items> details page is displayed
