@@ -3,8 +3,9 @@ Feature:  Search for property for sale
   As a customer
   I want to search for a property of my choice and view the details
 
- Scenario Outline:
-   Given I navigate to the Zoopla homepage
+  Background: I navigate to the Zoopla homepage
+
+ Scenario Outline: Search for properties
    When I search for <Property> in <Location>
    And I enter between <Minimum> and <Maximum> price
    And select <Amount> Bedrooms
@@ -16,8 +17,7 @@ Feature:  Search for property for sale
       | Flats      | M1              | 60000   | 120000  | 3      |
       | Farm/land  | Barking Station | 80000   | 160000  | 6      |
 
- Scenario Outline:
-   Given I navigate to the Zoopla homepage
+ Scenario Outline: Select from list of properties
    When I search for <Property> in <Location>
    And I enter between <Minimum> and <Maximum> price
    And select <Amount> Bedrooms
