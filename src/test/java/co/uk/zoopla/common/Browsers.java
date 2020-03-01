@@ -11,12 +11,14 @@ import java.util.concurrent.TimeUnit;
 
 public class Browsers extends Driver {
 
-    private WebDriver initChrome() {
+    private WebDriver initChrome()
+    {
         WebDriverManager.chromedriver().setup();
         return new ChromeDriver();
     }
 
-    private WebDriver initHeadlessChrome() {
+    private WebDriver initHeadlessChrome()
+    {
         WebDriverManager.chromedriver().setup();
 
         ChromeOptions options = new ChromeOptions();
@@ -25,12 +27,14 @@ public class Browsers extends Driver {
 
     }
 
-    private WebDriver initFirefox() {
+    private WebDriver initFirefox()
+    {
         WebDriverManager.firefoxdriver().setup();
         return new FirefoxDriver();
     }
 
-    private WebDriver initHeadlessFirefox() {
+    private WebDriver initHeadlessFirefox()
+    {
         WebDriverManager.firefoxdriver().setup();
 
         FirefoxOptions options = new FirefoxOptions();

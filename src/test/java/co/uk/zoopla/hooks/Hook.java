@@ -12,11 +12,13 @@ public class Hook extends Browsers
         launchBrowser("Chrome");
     }
 
-        @After
-        public void tearDown()
-        {
-            closeBrowser();
-        }
+
+    @After
+    public void tearDown()
+    {
+      //  closeBrowser();
+    }
+
 
 }
 

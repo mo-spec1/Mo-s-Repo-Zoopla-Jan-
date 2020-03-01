@@ -7,16 +7,16 @@ Feature:  Search for property for sale
     Given I navigate to the Zoopla Homepage
 
  Scenario Outline: Search for properties
-   When I search for <Property> in <Location>
-   And I enter between <Minimum> and <Maximum> price
-   And select <Amount> Bedrooms
-   Then search result page displays <Property>
+   When I search for a Property in "<Location>"
+   And I enter between "<Minimum>" and "<Maximum>" price
+   And select "<Amount>" Bedrooms
+   Then search result page displays the Property
 
    Examples:
-      | Property   | Location        | Minimum | Maximum | Amount |
-      | Houses     | Manchester      | 40000   | 90000   | 2      |
-#      | Flats      | M1              | 60000   | 120000  | 3      |
-#      | Farm/land  | Barking Station | 80000   | 160000  | 6      |
+      | Location        | Minimum   |  Maximum   | Amount |
+      | Manchester      | £40,000   | £90,000    | 2+     |
+#     | M1              | 60000   | 120000  | 3      |
+#     | Barking Station | 80000   | 160000  | 6      |
 #
 # Scenario Outline: Select from list of properties
 #   When I search for <Property> in <Location>
